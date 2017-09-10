@@ -12,6 +12,7 @@
 		E131AA071F6533A700876B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E131AA051F6533A700876B30 /* Main.storyboard */; };
 		E131AA091F6533A700876B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E131AA081F6533A700876B30 /* Assets.xcassets */; };
 		E131AA0C1F6533A700876B30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E131AA0A1F6533A700876B30 /* LaunchScreen.storyboard */; };
+		E131AA1A1F6540A400876B30 /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E131AA191F6540A400876B30 /* TipCalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E131AA081F6533A700876B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E131AA0B1F6533A700876B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E131AA0D1F6533A700876B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E131AA191F6540A400876B30 /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				E131AA081F6533A700876B30 /* Assets.xcassets */,
 				E131AA0A1F6533A700876B30 /* LaunchScreen.storyboard */,
 				E131AA0D1F6533A700876B30 /* Info.plist */,
+				E131AA191F6540A400876B30 /* TipCalculatorViewController.swift */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E131AA041F6533A700876B30 /* ViewController.swift in Sources */,
+				E131AA1A1F6540A400876B30 /* TipCalculatorViewController.swift in Sources */,
 				E131AA021F6533A700876B30 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
