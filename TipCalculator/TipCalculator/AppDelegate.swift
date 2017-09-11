@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  TipCalculator
 //
-//  Created by Nguyên Duy on 9/10/17.
+//  Created by Nguyên Duy on 9/11/17.
 //  Copyright © 2017 Nguyên Duy. All rights reserved.
 //
 
