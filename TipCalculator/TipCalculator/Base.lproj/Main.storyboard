@@ -106,16 +106,16 @@
                                         <color key="backgroundColor" red="0.99352289155370099" green="0.97775615422757922" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="15%"/>
                                         <connections>
-                                            <action selector="btnPercentage15Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kc4-wg-w9v"/>
+                                            <action selector="btnPercentage15Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QG3-Q0-OT0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgz-nl-eQk">
-                                        <rect key="frame" x="112" y="0.0" width="107" height="30"/>
+                                        <rect key="frame" x="112" y="0.0" width="107" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.99352289155370099" green="0.97775615422757922" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="20%"/>
                                         <connections>
-                                            <action selector="btnPercentage20Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eih-gN-oCq"/>
+                                            <action selector="btnPercentage20Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fbY-GH-ZW2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pev-Oc-dJ7">
@@ -124,7 +124,7 @@
                                         <color key="backgroundColor" red="0.99352289155370099" green="0.97775615422757922" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="25%"/>
                                         <connections>
-                                            <action selector="btnPercentage25Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBd-gU-Y44"/>
+                                            <action selector="btnPercentage25Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qmd-i0-OSw"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -140,7 +140,7 @@
                                         <color key="backgroundColor" red="0.99352289159999996" green="0.97775615419999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="$"/>
                                         <connections>
-                                            <action selector="btnDollarClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xyx-Y1-reJ"/>
+                                            <action selector="btnDollarClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5lV-DX-5Ia"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hm-U7-QbX">
@@ -149,7 +149,7 @@
                                         <color key="backgroundColor" red="0.99352289159999996" green="0.97775615419999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="£"/>
                                         <connections>
-                                            <action selector="btnPoundClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qlh-LK-xO6"/>
+                                            <action selector="btnPoundClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xKa-5K-5ev"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bz-Vj-lv8">
@@ -158,7 +158,7 @@
                                         <color key="backgroundColor" red="0.99352289159999996" green="0.97775615419999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="đ"/>
                                         <connections>
-                                            <action selector="btnVNDClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RXT-3P-z3Z"/>
+                                            <action selector="btnVNDClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvW-eg-cCR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -169,11 +169,12 @@
                     </view>
                     <connections>
                         <outlet property="btnCalculate" destination="wc9-HP-i8C" id="m2r-Zw-V9Q"/>
-                        <outlet property="btnDollar" destination="vWr-Bt-XtT" id="0xc-GP-gZ7"/>
-                        <outlet property="btnPercentage15" destination="9SW-Ak-lLd" id="MNo-xf-jKk"/>
-                        <outlet property="btnPercentage20" destination="fgz-nl-eQk" id="MrG-pY-V2G"/>
-                        <outlet property="btnPound" destination="6hm-U7-QbX" id="buw-l2-pdx"/>
-                        <outlet property="btnVND" destination="2bz-Vj-lv8" id="lVj-kX-AwF"/>
+                        <outlet property="btnDollar" destination="vWr-Bt-XtT" id="lG3-7h-mob"/>
+                        <outlet property="btnPercentage15" destination="9SW-Ak-lLd" id="bnn-YS-uHI"/>
+                        <outlet property="btnPercentage20" destination="fgz-nl-eQk" id="NVq-Zs-Yb5"/>
+                        <outlet property="btnPercentage25" destination="pev-Oc-dJ7" id="d2z-ZO-FZS"/>
+                        <outlet property="btnPound" destination="6hm-U7-QbX" id="cBd-ML-qy3"/>
+                        <outlet property="btnVND" destination="2bz-Vj-lv8" id="DbI-oq-jwe"/>
                         <outlet property="lbCurrencySign" destination="lv8-Iu-Esx" id="LVP-Rp-tCy"/>
                         <outlet property="lbCurrencySign2" destination="CTG-Uc-tHI" id="TTF-JT-rwb"/>
                         <outlet property="lbTip" destination="dHo-im-AqK" id="YO8-Q3-Ddc"/>
