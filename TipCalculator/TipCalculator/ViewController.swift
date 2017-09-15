@@ -96,29 +96,81 @@ class ViewController: UIViewController {
             btnDollar.backgroundColor = .white
             lbCurrencySign.text = "đ"
             lbCurrencySign2.text = "đ"
+        case 7: //btnCalculate
+            lbTip.text = "\(tipAmount.rounded())"
+            lbTotal.text = "\(totalAmount.rounded())"
             break
         default:
             break
         }
     }
     
-//    func moneyConvert() {
-//        let standardTip: Float = tipAmount
-//        let standardTotal: Float = totalAmount
-//        
-//        billAmount = Float(tfBillAmount.text!)!
-//        
-//        if btnTag == 4 {
-//            convertedTip = standardTip * 0.75
-//            convertedTotal = standardTotal * 0.75
-//        } else if btnTag == 5 {
-//            convertedTip = standardTip * 1.32
-//            convertedTotal = standardTotal * 1.32
-//        } else if btnTag == 6 {
-//            convertedTip = standardTip * 22700
-//            convertedTotal = standardTotal * 22700
-//        }
-//    }
+    func moneyConvert() {
+        let baseTip: Float = tipAmount
+        let baseTotal: Float = totalAmount
+        
+        switch btnTag {
+        case 4:
+            convertedTip = baseTip
+            convertedTotal = baseTotal
+            tipAmount = convertedTip
+            totalAmount = convertedTotal
+            if btnTag == 5 {
+                convertedTip = baseTip * 0.735536
+                convertedTotal = baseTotal * 0.735536
+                tipAmount = convertedTip
+                totalAmount = convertedTotal
+                break
+            } else if btnTag == 6 {
+                convertedTip = baseTip * 22722.792260185
+                convertedTotal = baseTotal * 22722.792260185
+                tipAmount = convertedTip
+                totalAmount = convertedTotal
+                break
+            }
+            break
+        case 5:
+            convertedTip = baseTip * 0.7361847829
+            convertedTotal = baseTotal * 0.7361847829
+            tipAmount = convertedTip
+            totalAmount = convertedTotal
+            if btnTag == 4 {
+                convertedTip = baseTip * 1.3582
+                convertedTotal = baseTotal * 1.3582
+                tipAmount = convertedTip
+                totalAmount = convertedTotal
+                break
+            } else if btnTag == 6 {
+                convertedTip = baseTip * 30.9042234
+                convertedTotal = baseTotal * 30.9042234
+                tipAmount = convertedTip
+                totalAmount = convertedTotal
+                break
+            }
+            break
+        case 6:
+            convertedTip = baseTip * 22722.792260185
+            convertedTotal = baseTotal * 22722.792260185
+            tipAmount = convertedTip
+            totalAmount = convertedTotal
+            if btnTag == 4 {
+                convertedTip = baseTip * 0.0000440044
+                convertedTotal = baseTotal * 0.0000440044
+                tipAmount = convertedTip
+                totalAmount = convertedTotal
+                break
+            } else if btnTag == 5 {
+                convertedTip = baseTip * 0.0000323793
+                convertedTotal = baseTotal * 0.0000323793
+                tipAmount = convertedTip
+                totalAmount = convertedTotal
+                break
+            }
+            break
+        default:
+            break
+        }
+    }
 
     @IBAction func tfBillAmountInput(_ sender: Any) {
     }
@@ -144,21 +196,24 @@ class ViewController: UIViewController {
     @IBAction func btnDollarClick(_ sender: Any) {
         btnTag = 4
         setClickedBtnBehavior()
+        moneyConvert()
     }
     
     @IBAction func btnPoundClick(_ sender: Any) {
         btnTag = 5
         setClickedBtnBehavior()
+        moneyConvert()
     }
     
     @IBAction func btnVNDClick(_ sender: Any) {
         btnTag = 6
         setClickedBtnBehavior()
+        moneyConvert()
     }
     
     @IBAction func btnCalculateClick(_ sender: Any) {
-        lbTip.text = "\(tipAmount)"
-        lbTotal.text = "\(totalAmount)"
+        btnTag = 7
+        setClickedBtnBehavior()
     }
 }
 
