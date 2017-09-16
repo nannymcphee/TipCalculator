@@ -112,7 +112,7 @@ class ViewController: UIViewController {
         switch btnTag {
         case 4:
             convertedTip = baseTip
-            convertedTotal = baseTotal
+            convertedTotal = baseTotal 
             tipAmount = convertedTip
             totalAmount = convertedTotal
             if btnTag == 5 {
