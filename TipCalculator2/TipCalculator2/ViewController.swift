@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  TipCalculator
+//  TipCalculator2
 //
-//  Created by Nguyên Duy on 9/11/17.
+//  Created by Nguyên Duy on 9/18/17.
 //  Copyright © 2017 Nguyên Duy. All rights reserved.
 //
 
@@ -10,18 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var lbBillAmount: UILabel!
     @IBOutlet weak var tfBillAmount: UITextField!
     @IBOutlet weak var lbTip: UILabel!
-    @IBOutlet weak var lbCurrencySign: UILabel!
-    @IBOutlet weak var lbCurrencySign2: UILabel!
-    @IBOutlet weak var lbTotal: UILabel!
-    @IBOutlet weak var btnCalculate: UIButton!
+    @IBOutlet weak var lbTipAmount: UILabel!
+    @IBOutlet weak var lbCurrencySign1: UILabel!
     @IBOutlet weak var btnPercentage15: UIButton!
     @IBOutlet weak var btnPercentage20: UIButton!
     @IBOutlet weak var btnPercentage25: UIButton!
     @IBOutlet weak var btnDollar: UIButton!
     @IBOutlet weak var btnPound: UIButton!
     @IBOutlet weak var btnVND: UIButton!
+    @IBOutlet weak var lbTotal: UILabel!
+    @IBOutlet weak var lbTotalAmount: UILabel!
+    @IBOutlet weak var lbCurrencySign2: UILabel!
+    @IBOutlet weak var btnCalculate: UIButton!
     
     var billAmount: Float = 0.0
     var tipAmount: Float = 0.0
@@ -30,15 +33,12 @@ class ViewController: UIViewController {
     var btnTag: Int = 0
     var convertedTip: Float = 0.0
     var convertedTotal: Float = 0.0
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Set keyboard type = number pad
-        //tfBillAmount.keyboardType = .numberPad
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -80,25 +80,25 @@ class ViewController: UIViewController {
             btnDollar.backgroundColor = .cyan
             btnPound.backgroundColor = .white
             btnVND.backgroundColor = .white
-            lbCurrencySign.text = "$"
+            lbCurrencySign1.text = "$"
             lbCurrencySign2.text = "$"
             break
         case 5:
             btnPound.backgroundColor = .cyan
             btnDollar.backgroundColor = .white
             btnVND.backgroundColor = .white
-            lbCurrencySign.text = "£"
+            lbCurrencySign1.text = "£"
             lbCurrencySign2.text = "£"
             break
         case 6:
             btnVND.backgroundColor = .cyan
             btnPound.backgroundColor = .white
             btnDollar.backgroundColor = .white
-            lbCurrencySign.text = "đ"
+            lbCurrencySign1.text = "đ"
             lbCurrencySign2.text = "đ"
         case 7: //btnCalculate
             lbTip.text = "\(tipAmount.rounded())"
-            lbTotal.text = "\(totalAmount.rounded())"
+            lbTotalAmount.text = "\(totalAmount.rounded())"
             break
         default:
             break
@@ -115,66 +115,65 @@ class ViewController: UIViewController {
             convertedTotal = baseTotal
             tipAmount = convertedTip
             totalAmount = convertedTotal
-            if btnTag == 5 {
-                convertedTip = baseTip * 0.735536
-                convertedTotal = baseTotal * 0.735536
-                tipAmount = convertedTip
-                totalAmount = convertedTotal
-                break
-            } else if btnTag == 6 {
-                convertedTip = baseTip * 22722.792260185
-                convertedTotal = baseTotal * 22722.792260185
-                tipAmount = convertedTip
-                totalAmount = convertedTotal
-                break
-            }
+//            if btnTag == 5 {
+//                convertedTip = baseTip * 0.735536
+//                convertedTotal = baseTotal * 0.735536
+//                tipAmount = convertedTip
+//                totalAmount = convertedTotal
+//                break
+//            } else if btnTag == 6 {
+//                convertedTip = baseTip * 22722.792260185
+//                convertedTotal = baseTotal * 22722.792260185
+//                tipAmount = convertedTip
+//                totalAmount = convertedTotal
+//                break
+//            }
             break
         case 5:
             convertedTip = baseTip * 0.7361847829
             convertedTotal = baseTotal * 0.7361847829
             tipAmount = convertedTip
             totalAmount = convertedTotal
-            if btnTag == 4 {
-                convertedTip = baseTip * 1.3582
-                convertedTotal = baseTotal * 1.3582
-                tipAmount = convertedTip
-                totalAmount = convertedTotal
-                break
-            } else if btnTag == 6 {
-                convertedTip = baseTip * 30.9042234
-                convertedTotal = baseTotal * 30.9042234
-                tipAmount = convertedTip
-                totalAmount = convertedTotal
-                break
-            }
+//            if btnTag == 4 {
+//                convertedTip = baseTip * 1.3582
+//                convertedTotal = baseTotal * 1.3582
+//                tipAmount = convertedTip
+//                totalAmount = convertedTotal
+//                break
+//            } else if btnTag == 6 {
+//                convertedTip = baseTip * 30.9042234
+//                convertedTotal = baseTotal * 30.9042234
+//                tipAmount = convertedTip
+//                totalAmount = convertedTotal
+//                break
+//            }
             break
         case 6:
             convertedTip = baseTip * 22722.792260185
             convertedTotal = baseTotal * 22722.792260185
             tipAmount = convertedTip
             totalAmount = convertedTotal
-            if btnTag == 4 {
-                convertedTip = baseTip * 0.0000440044
-                convertedTotal = baseTotal * 0.0000440044
-                tipAmount = convertedTip
-                totalAmount = convertedTotal
-                break
-            } else if btnTag == 5 {
-                convertedTip = baseTip * 0.0000323793
-                convertedTotal = baseTotal * 0.0000323793
-                tipAmount = convertedTip
-                totalAmount = convertedTotal
-                break
-            }
+//            if btnTag == 4 {
+//                convertedTip = baseTip * 0.0000440044
+//                convertedTotal = baseTotal * 0.0000440044
+//                tipAmount = convertedTip
+//                totalAmount = convertedTotal
+//                break
+//            } else if btnTag == 5 {
+//                convertedTip = baseTip * 0.0000323793
+//                convertedTotal = baseTotal * 0.0000323793
+//                tipAmount = convertedTip
+//                totalAmount = convertedTotal
+//                break
+//            }
             break
         default:
             break
         }
     }
-    
     @IBAction func tfBillAmountInput(_ sender: Any) {
     }
-    
+
     @IBAction func btnPercentage15Click(_ sender: Any) {
         btnTag = 1
         calculate()
@@ -195,18 +194,21 @@ class ViewController: UIViewController {
     
     @IBAction func btnDollarClick(_ sender: Any) {
         btnTag = 4
+        calculate()
         setClickedBtnBehavior()
         moneyConvert()
     }
     
     @IBAction func btnPoundClick(_ sender: Any) {
         btnTag = 5
+        calculate()
         setClickedBtnBehavior()
         moneyConvert()
     }
     
     @IBAction func btnVNDClick(_ sender: Any) {
         btnTag = 6
+        calculate()
         setClickedBtnBehavior()
         moneyConvert()
     }
@@ -215,5 +217,6 @@ class ViewController: UIViewController {
         btnTag = 7
         setClickedBtnBehavior()
     }
+
 }
 
